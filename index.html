@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国名人的故事</title>
+    <!-- font awesome cdn link  -->
+    <script src="https://kit.fontawesome.com/c5b69774ce.js" crossorigin="anonymous"></script>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<!-- header section starts  -->
+<header>
+    <a href="#" class="logo"><i class="fa-solid fa-user-pen"></i>Celebrities</a>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <a href="#home">主页</a>
+        <a href="#step">内容概览</a>
+        <a href="#speciality">人物介绍</a>
+        <a href="#gallery">美文欣赏</a>
+        <a href="#order">青春会客厅</a>
+        <a href="#review">个人总结</a>
+    </nav>
+</header>
+<!-- header section ends -->
+
+<!-- home section starts  -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>中国 诗人|作家|民国人 故事</h3>
+        <p>从庙堂到江湖，以诗为剑，划下中国文人最浓墨重彩的一笔。<br>
+            ——诗词大家<br><br>
+            平生展开，岁月淡扫，烟云往事里，最爱一身长衫书生模样。<br>
+            ——文学大家<br><br>
+            他们在近代的舞台上嬉笑怒骂，他们在历史的烽烟里踽踽独行。<br>
+            ——民国名流<br>
+        </p>
+        <br>
+        <a href="#speciality" class="goto-next btn">时光穿梭……</a>
+    </div>
+    <div class="image">
+        <img src="data:image/jpeg;base64,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" alt="">
+    </div>
+</section>
+<!-- home section ends -->
+
+<!-- steps section starts  -->
+<section class="step" id="step">
+    <div class="step-container">
+        <h1 class="heading">你将看到的<span>“沿途风景”</span></h1>
+        <section class="steps">
+            <div class="box">
+                <img src="https://t12.baidu.com/it/u=1087260217,174075024&fm=30&app=106&f=JPEG?w=640&h=485&s=EDD2EB02074327FD5C54251E0100E090" alt="">
+                <h3>一些诗词大家、文学大家、民国名流</h3>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJvb2t8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                <h3>一些描述其生平事迹的美文推荐</h3>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1583526241256-cb18e8635e5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                <h3>青春会客厅，快来加入我们</h3>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3JpdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                <h3>主题描述，附实验报告及学习总结</h3>
+            </div>
+        </section>
+    </div>
+</section>
+<!-- steps section ends -->
+
+<!-- speciality section starts  -->
+<section class="speciality" id="speciality">
+    <h1 class="heading"> 人物 <span>介绍</span> </h1>
+    <div class="box-container">
+        <div class="box">
+            <img class="image" src="https://p7.itc.cn/q_70/images03/20210905/b0ff4c3298604f889de2c6374feff83c.png" alt="">
+            <div class="content">
+                <i class="fa-solid fa-user"></i>
+                <h3>李白</h3>
+                <p>李白（701年2月28日—762年12月），字太白，号青莲居士，祖籍陇西成纪，出生于蜀郡绵州昌隆县（一说出生于西域碎叶）。唐朝伟大的浪漫主义诗人，他的诗作被广泛传诵和研究，被视为中国文学珍宝之一。</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="https://pic.616pic.com/ys_bnew_img/00/01/93/TwceJ3h5p0.jpg" alt="">
+            <div class="content">
+                <i class="fa-solid fa-user"></i>
+                <h3>屈原</h3>
+                <p>屈原（约公元前340年-278年），中国古代著名的诗人、政治家和文化名人。楚国人，被誉为中国楚辞的创始人和代表人物。楚辞是中国文学史上的重要文学流派之一，以其独特的抒情风格和深邃的哲理而闻名。</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="https://pic.616pic.com/ys_bnew_img/00/12/76/RAfPwOpvGI.jpg" alt="">
+            <div class="content">
+                <i class="fa-regular fa-circle-user"></i>
+                <h3>鲁迅</h3>
+                <p>鲁迅（1881年-1936年），原名周樟寿，后改名周树人，字豫山，号鲁迅，是中国现代文学和思想史上的重要人物，也是中国现代文化发展的杰出代表之一，是中国现代文学史上最有影响力的作家和文化评论家之一。</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzeYplgokkDjt_blxlY7Tny4eemNh4LZ6bwSIbvpJc_Js9SZGTDTMObHg-OEDRVO4E7qU&usqp=CAU" alt="">
+            <div class="content">
+                <i class="fa-regular fa-circle-user"></i>
+                <h3>王小波</h3>
+                <p>王小波（1952年-1997年），原名王曙光，是中国当代著名作家。他写作风格独特和对社会现象观察犀利，被誉为中国当代文学界的"反文艺青年"，作品多样且具有创新性，涵盖小说、散文、随笔、杂文等多个文学领域。</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fss2.meipian.me%2Fusers%2F45148849%2Fa8f4451ac1514649a73d93d9ffafa146.jpg%3Fmeipian-raw%2Fbucket%2Fivwen%2Fkey%2FdXNlcnMvNDUxNDg4NDkvYThmNDQ1MWFjMTUxNDY0OWE3M2Q5M2Q5ZmZhZmExNDYuanBn%2Fsign%2Fdbf3e6339c5b7a595ac26559d5f761a6.jpg&refer=http%3A%2F%2Fss2.meipian.me&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1690830280&t=aee4b83968b248b7bbcbd3af9663c4f7" alt="">
+            <div class="content">
+                <i class="fa-regular fa-circle-user"></i>
+                <h3>朱自清</h3>
+                <p>朱自清（1898年-1948年），字梅花，号自清，是中国现代著名的作家、教育家和翻译家，中国现代散文的代表人物之一。其作品以纯美、清新、婉约的风格而闻名，对中国现代散文的发展产生了深远的影响。</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="https://5b0988e595225.cdn.sohucs.com/images/20191223/c27e1992051842c7b7efe9cd925ad318.jpeg" alt="">
+            <div class="content">
+                <i class="fa-solid fa-circle-user"></i>
+                <h3>闻一多</h3>
+                <p>闻一多（1899年-1947年），字义夫，号雪莲，是中国现代文学史上重要的学者、思想家和教育家之一。中国现代散文运动的先驱者之一，新月派文学团体的核心人物。作品具有深厚的思想内涵和鲜明的人文关怀。</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="https://k.sinaimg.cn/n/sinacn14/480/w640h640/20180516/5670-harvfht7791380.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt="">
+            <div class="content">
+                <i class="fa-solid fa-circle-user"></i>
+                <h3>胡适</h3>
+                <p>胡适（1891年-1962年），原名适之，字适之，号适庵，是中国近代著名的文学家、思想家和教育家，也是新文化运动的重要领导人之一。早年留学美国，深受西方文化和思想的影响，主张借鉴和吸收西方科学。</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaW0KXAsV4B0V5A-kP2owan_fx2EugHhkuxBbZAMuaX0KRxiHqXNDciTJINrd01uViEd8&usqp=CAU" alt="">
+            <div class="content">
+                <i class="fa-solid fa-circle-user"></i>
+                <h3>王国维</h3>
+                <p>王国维（1872年-1927年），字静安，浙江杭州人，是中国现代文化史上的重要人物之一。他是中国近代文化界的学者、教育家、思想家和诗人，也是“新文化运动”时期的重要推动者之一。</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- gallery section starts  -->
+<section class="gallery" id="gallery">
+    <h1 class="heading"> 美文 <span> 欣赏 </span> </h1>
+    <div class="box-container">
+        <div class="box">
+            <h2>诗酒年华</h2><br><br>
+            <p>
+                清夜无尘，月色如银。<br>
+                酒斟时、须满十分。<br>
+                <br>
+                几时归去，作个闲人。<br>
+                对一张琴，一壶酒、一溪云。
+            </p>
+        </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHJlYWQlMjBib29rfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+            <div class="content">
+                <h3>“幽人独往来：簪花的少年郎，老了还是少年”</h3>
+                <p>《屈原：香草洁癖》——谢青桐</p>
+                <a href="https://www.aisixiang.com/data/54538.html" class="btn">感兴趣</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1531053270060-6643c8e70e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJlYWQlMjBib29rfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+            <div class="content">
+                <h3>”人世繁华：荣华梦一场，功名纸半张“</h3>
+                <p>《欧阳修：“富养”出来的文人》——七白</p>
+                <a href="https://mp.weixin.qq.com/s?__biz=MzI1MzAxNDQ5Mg==&mid=2658779815&idx=3&sn=b99a2b6b3fed693ebf11508a5766916c&chksm=f2579a14c52013027478e05a5e5542aee6edc26bf4e40edf50c1677b9deaed27b5daeae3c74d&scene=27" class="btn">感兴趣</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://plus.unsplash.com/premium_photo-1671782942218-ab2c8116bebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fHJlYWQlMjBib29rfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+            <div class="content">
+                <h3>“暮已深：青灯黄卷，红尘绿林”</h3>
+                <p>《杜甫:多情的诗圣》——黄薇</p>
+                <a href="http://qikan.cqvip.com/Qikan/Article/ReadIndex?id=1003457115&info=di0L0n01%2bNxF6gtosNwX1ixXWeVaGR6VdsZJJdwSU%2b4xJm6X3jUFpA%3d%3d" class="btn">感兴趣</a>
+            </div>
+        </div>
+        <div class="box">
+            <h2>纸上桂冠</h2><br><br>
+            <p>
+                没人能懂文人的世界，<br>
+                因为他们的世界是最空旷寂寥的。<br>
+                正因为孤独，<br>
+                所以他们用铅色的文字，<br>
+                在白色的纸页上，<br>
+                造就了一个个生动的故事，<br>
+                那故事，每个章节都色彩斑斓。
+            </p>
+        </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1532774682361-95f0831019d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzZ8fHJlYWQlMjBib29rfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+            <div class="content">
+                <div class="content">
+                    <h3>“黄金时代：桃李春风一杯酒，江湖夜雨十年灯”</h3>
+                    <p>《王小波：四月是个残忍的季节》——韩梅梅</p>
+                    <a href="https://cread.jd.com/read/startRead.action?bookId=30184525&readType=1" class="btn">感兴趣</a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1481141973768-673903376812?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fHJlYWQlMjBib29rfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+            <div class="content">
+                <h3>”先生归来：在年月深渊，想象你模样远远“</h3>
+                <p>《钱钟书：最狂的才子，最深情的丈夫，最有趣的父亲》——慕容素衣</p>
+                <a href="https://baijiahao.baidu.com/s?id=1584457777065742869&wfr=spider&for=pc" class="btn">感兴趣</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1611690827407-2b1c490c0c86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODZ8fHJlYWQlMjBib29rfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+            <div class="content">
+                <h3>”远山淡影：山南水北，素白长衣，只身一人“</h3>
+                <p>《朱自清：性情文人的半百岁月》——佚名</p>
+                <a href="https://m.fx361.com/news/2018/1028/4411610.html" class="btn">感兴趣</a>
+            </div>
+        </div>
+        <div class="box">
+            <h2>一袭青衫</h2><br><br>
+                <p>
+                    曾经有那样一个时代，<br>
+                    曾经有那样一批人物。<br>
+                    他们那样地想着，那样地活着。<br>
+                    他们离我们今天并不遥远，<br>
+                    守护、体现的精神、风骨，<br>
+                    已与我们相去甚远。<br>
+                    读着他们，让我们感到仿若隔世；<br>
+                    抚摸历史，我们常常浩叹不已。
+                </p>
+        </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1525715843408-5c6ec44503b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI5fHxyZWFkJTIwYm9va3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <div class="content">
+                <div class="content">
+                    <h3>“乌衣风流”</h3>
+                    <p>《不羁之马陈独秀》——张家康</p>
+                    <a href="https://www.doc88.com/p-4711934499839.html" class="btn">感兴趣</a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1517401220137-9462c929bf9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAyfHxyZWFkJTIwYm9va3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <div class="content">
+                <h3>”栏杆拍遍“</h3>
+                <p>《梁启超：雄文横扫旧世界》——郑延鑫/翁倩</p>
+                <a href="http://www.infzm.com/contents/32099" class="btn">感兴趣</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1520137422827-6253b606667b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM3fHxyZWFkJTIwYm9va3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <div class="content">
+                <h3>”大学之魂“</h3>
+                <p>《蔡元培：百年孤独魂兮归》——周怀忠</p>
+                <a href="https://www.wenmi.com/article/pwjp71044t31.html" class="btn">感兴趣</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- gallery section ends -->
+
+<!-- order section starts  -->
+<section class="order" id="order">
+    <h1 class="heading"> <span>青春</span>会客厅</h1>
+    <div class="row">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dG9nZXRoZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="姓名">
+                <input type="email" placeholder="邮箱">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="年龄" min="0" max="100">
+                <input type="password" placeholder="密码" id="passwordField">
+            </div>
+            <textarea placeholder="加入原因" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="立即加入" class="btn" onclick="showAlert()">
+        </form>
+    </div>
+</section>
+<!-- order section ends -->
+
+<!-- review section starts  -->
+<section class="review" id="review">
+    <h1 class="heading"> 个人 <span>总结</span> </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhhbmRzb21lJTIwYm95fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+            <h2>《Web应用基础》课程结业报告</h2>
+            <h3>一、主题描述</h3>
+            <p>该网站采用HTML、CSS、JavaScript“网页三剑客”实现了以上静态网页，由于本人对文学和相关人物的事迹十分感兴趣，因此我的目标是通过这个网站，让其他人也能了解中国历史名人，
+                探究中国文学的精华，促进文学知识的传播和交流。无论是学术研究者、学生还是文学爱好者，都可在该网站上找寻到属于诗人的那份浪漫、属于作家的那种深邃、属于民国人的那段历史。</p>
+            <p>诗人——
+                在那个黄昏的时刻，诗人如夕阳一般灿烂。他的眼睛闪烁着星辰的光芒，被智慧和梦想所温暖。
+                他的笔触如花瓣般轻盈，舞动在纸上，绘出诗的画卷。每一个字，都流淌着诗意的血脉，每一行，都跳动着音符的旋律。
+                他捕捉思绪的飞鸟，将它们安放在诗篇的枝头。他把花香和月光融入文字的色彩，用文字的魔力传递心灵的诉求。
+                诗人如晨曦中的水滴，含着大地的清新和温润。他的诗语如清泉般流淌，滋润人们内心的干渴与沉寂。
+                他以诗为羽翼，飞越时光的边界，寻找着美和真理的永恒存在。他的灵感是天上的星星，闪耀着创造和感知的光辉。
+                诗人，那位创造文字之美的艺术家，用诗歌雕刻情感的纹理，他是语言之王，灵感之巨星，为世界的荒芜带来了盛放的花期。</p>
+            <p>作家——
+                在寂静的黑夜里燃起了星火，用文字为世界织起了华美的画卷。他们是思想的航海家，探索真理的探险者，在纸张上驰骋着自由的思绪与想象。
+                他们的思维如闪电般犀利，点燃了读者内心的灵感之火。他们用笔触凝聚着人类的智慧和情感，将文字编织成富有意义的故事和抒情。
+                每一个字都是他们的心灵乐章，每一段话都流淌着感悟的泉水。他们的笔触如尖锐的刀锋，剖开现实的表象，揭示内心的秘密。
+                作家是时光的见证者，记录者，用文字把过去的岁月定格为永恒。他们     心灵的解码者，启迪者，用文字为人们揭示生命的奥秘与真相。
+                他们善于观察，捕捉细微的细节，在平凡的日常中寻找不平凡的灵感。他们执着于文字的雕琢与调和，用文笔绘画出世界的多彩与多姿。
+                作家，那位用灵魂书写的艺术家，用文字开启了想象的大门。他们用才华和汗水炼制了每一行文字，在纸张上留下永恒的足迹和意义。
+                作家们，以他们的笔为羽翼飞翔，跨越了时空的界限，触及人心的温暖。他们是信念的倡导者和梦想的守护者，用文字点燃了世界的热情和希望。
+            </p>
+            <p>
+                民国人——
+                那时的人物，在民国的岁月里闪耀着光芒，他们是那个时代的见证者和缔造者。他们的衣着典雅，举止风度翩翩，在变幻的时代中展示着坚韧的品格。
+                他们执着于理想与追求，用无尽的努力创造着辉煌的事业。他们是知识的守望者和智慧的传播者，用自己的才华开启了人们的思想之门。
+                那时的女性，温柔而坚毅，她们的声音如柔风般轻盈婉转。她们敢于追求平等和自由，在尘封的传统中展现出勇敢的姿态。
+                那时的男性，绅士而豪放，他们的目光中蕴含着自由的热忱。他们奋发向前，为国家和民众奉献，不畏艰险，勇于担当起历史的责任。
+                民国时期的人物，彰显着民族的骄傲与自豪，他们的心怀着对国家和人民的无限热爱。他们是智慧的火炬，在黑暗中闪耀，引导着国家走向文明和繁荣的道路。
+                乘风破浪，他们勇敢地奏响时代的交响，他们的思想与行动改变了整个社会。他们是时代的先驱，人类发展进步的推动者，永远留在历史的篇章中，永不磨灭的记忆。
+            </p>
+
+            <h3>二、开发过程</h3>
+            <h4>1.版块划分</h4>
+            <p>
+                在确定主题后，本着向其他人介绍自己爱好的意愿，因此选择介绍一些自己比较喜欢的人物，以及描写这些人物的文章，最后设置了“人物介绍”和“美文欣赏”页面，
+                其次本着希望结交更多志趣相投的朋友的原则，设置了一个“青春会客厅”页面，愿有更多人能够喜欢上文学，喜欢上这些人物，以及他们极具魅力的人生故事。此外，
+                本网站中还设置了“主页”、“个人总结”等页面，使整个网站更系统全面，同时也方便老师直接查看“课程结业报告”。
+            </p>
+            <p>说明：整个网站由6个页面设计而成，每一个页面由一个section标签设计而成。section是HTML中用来创建一个独立的区块或内容部分的标签。它可以用于组织和
+                结构化页面中的不同部分，例如文章、章节、侧边栏、页眉、页脚等。此处用section来构建一个页面，并用CSS样式使页面能够“全屏”展示。
+            </p>
+            <h4>2.“主页”页面的设计</h4>
+            <h5>2.1 设计过程</h5>
+            <p>
+                该界面在HTML中由一个“section”标签（该标签设置class为home），两个“div”标签（class分别为content和image）、一个“h3”标签、一个“p”标签、八个“br”标签、一个”a“标签和一个”img“标签组成。
+                在CSS样式设计中，首先设计了整个section的背景页面，使用“class选择器”，即“.home{}”,其中使用“弹性盒子”flex展示，设置flex-wrap属性设置弹性容器内的元素在空间不足时进行换行显示，设置background
+                为页面增设背景图片等。此外，在section下的div标签内，仍然采用“class选择器”，其中设置了“flex: 1 1 40rem”，表示一个用于弹性盒子布局的缩写属性。它表示弹性元素将根据可用空间进行拉伸，但不会缩小，
+                初始大小为40rem，还设置了“padding-top: 6.5rem”，表示设置顶部内边距为6.5rem，为内容提供间距。随后还设置了图片的样式，使用圆形展示，且使用”animation-name: float“，
+                指定要应用的动画名称为 “float”，它将匹配在CSS中定义的带有 @keyframes 规则的动画效果，从而实现图片上下浮动的效果。不仅如此，该页面中还设置了字体的样式，首先需要引入从fonts官网中引入
+                CSS样式，随后在CSS页面中设置相应标签中的字体样式属性“font-family”，引入需要的字体样式即可。除此之外，本网站的按钮设计遵循一个原则，即遵循设置的相应的内边距padding，边框样式border，
+                光标形状变化cursor以及元素的定位隐藏等，当光标聚焦时，此时按钮背景颜色将变红，且通过transition属性定义过渡动画效果。其次，按下该界面的按钮可直接跳转到“人物介绍”界面，其实现原理是在HTML中
+                内部实现了一个超链接标签，其href属性设置为“#speciality”，其中，speciality为section标签的class属性值。
+
+            </p>
+            <h5>2.2 遇到的问题及解决方法</h5>
+            <p>
+                该阶段主要在字体样式的设计上花费了较多心思，最开始字体没有设置成功，后来发现设置样式的位置有错误，将位置改成对应字的标签位置处即可完成字体的改变。再者就是在图片的浮动设计上算是比较具有创新性的点。
+            </p>
+            <h4>3.“内容概览”页面的设计</h4>
+            <h5>3.1 设计过程</h5>
+            <p>
+                该界面整体仍然使用“section”标签（该标签设置class为step），仍采用flex布局，设置了该界面的字体样式，设置了图片的圆形样式，有所不同的是，在设置图片圆形样式的同时，为该图片的外围增加了白色的
+                边框。其实现原理是利用”border: 1rem solid #fff“设置图片的边框样式为宽度为1rem的实线边框，颜色为白色。此外，还通过“box-shadow: 0 .5rem 1rem rgba(0,0,0,.1)”为图片添加一个盒子阴影效果，
+                偏移量为垂直方向0，水平方向0，模糊半径为0.5rem，阴影颜色为 rgba(0,0,0,.1)。
+            </p>
+            <h5>3.2 遇到的问题及解决方法</h5>
+            <p>
+                该阶段遇到的问题是没有将图片完全设置为圆形，可能原因是图片长宽比例差距太大，导致不能将图片设置为圆形，但却又重新设置图片的宽度和宽度为100%，但仍不能显示圆形，正确原因暂时不太清楚，仍在探索中。
+                此外，该界面由于内容太少，无法使该section占满整个屏幕，在设计过程中我在这个问题花费了较多的时间，首先想到在CSS中设置元素高度，
+                即在CSS中使用单位“vh”，用于设置“视口高度”。以下为设置元素高度占满屏幕的代码：
+                “.element{height: 100vh; /* 设置元素高度为100视口高度 */}”。如此，“.element”元素的高度将会等于当前屏幕的高度，从而占满整个屏幕。
+                但这并没有完美地解决我的问题，如移动设备上的地址栏伸缩会导致元素高度不准确。因此最终决定使用JavaScript来动态计算页面高度，以确保元素占满整个屏幕。
+                以下为使用JavaScript动态计算元素高度的代码：
+                ”window.addEventListener('resize', function() {  var windowHeight = window.innerHeight;  var element = document.querySelector('.element');  element.style.height = windowHeight + 'px'; });var windowHeight = window.innerHeight; var element = document.querySelector('.element'); element.style.height = windowHeight + 'px';“。
+                上述代码使用`window.innerHeight`获取窗口的视口高度，并在窗口大小改变时更新元素的高度。同时，还在页面加载时初始化了一次高度。这样，无论窗口大小如何变化，`.element`元素的高度都会保持与当前屏幕高度一致。
+                不仅如此，在设计该页面时可谓“命运多舛”啊！在导入图片时，明明已经设置好了flex弹性盒子，但四张图片却无法均匀地显示在一行上，
+                在使用”display: flex“、“justify-content: space-between”的基础上，最后通过调整图片之间的间距，即通过设置“flex: 1”
+                保证图片在容器内平均分布，并通过“margin”属性调整图片之间的间距，使用“max-width: 100%”和“height: auto”用于确保图片在容器内按比例缩放，并且不会变形。
+            </p>
+            <h4>4.“人物介绍”页面的设计</h4>
+            <h5>4.1 设计过程</h5>
+            <p>
+                该界面整体仍然使用“section”标签（该标签设置class为speciality），仍采用flex布局，设置了该界面的字体样式，设置了图片的相关样式，有所不同的是，
+                在界面中还引入了图片与文字的交替显示。其实现原理是设计一个CSS选择器，当有鼠标悬停在具有“.box”类的“.box-container”元素的内部时，对“.content”元素应用一些样式。
+                具体来说，当鼠标悬停在“.box-container”元素内部的“.box”元素上时，.content元素将会应用“transform: translateY(100%)”样式。这个样式规则将使“.content”
+                元素沿垂直方向向下平移100%，也就是从其正常位置向下移动到一个等于自身高度的位置，以此便实现了图片与文字的交替显示。此外，该界面使用了“Font Awesome”中的人物图标，
+                其实现过程是在HTML中引入Font Awesome图标库的脚本引入代码，随后在HTML标签中使用Font Awesome相应图标的样式类，如”fas fa-user-secret“即可显示图标。
+            </p>
+            <h5>4.2 遇到的问题及解决方法</h5>
+            <p>
+                在该界面的设计过程中，使用Font Awesome无法正常导入图标，经过自己不懈的探索，最终发现了解决办法。首先需要在“fontawesome.com”官网中注册登录后获得kit，随后将此
+                kit引入网页的HTML中，该脚本链接提供了一个更方便的方式来使用Font Awesome图标，通常用于使用Font Awesome Kits进行图标自定义的情况，其大致内容如下
+                “|script| src="https://kit.fontawesome.com/c5b69774ce.js" crossorigin="anonymous"|/script|”（“<”已替换为“|”）。通过搜集资料发现，
+                Font Awesome Kits 提供了更高级的功能，例如使用特定的图标集、自定义CSS、变量等功能。
+            </p>
+            <h4>5.“美文欣赏”页面的设计</h4>
+            <h5>5.1 设计过程</h5>
+            <p>
+                该界面整体仍然使用“section”标签（该标签设置class为gallery），仍采用flex布局，设置了该界面的字体样式，设置了图片的相关样式，其设计形式与“人物介绍”页面一致，
+                但有所不同的是，“人物介绍”页面默认显示文字，当鼠标置于其上时，才会显示人物图片；而“美文欣赏”页面默认显示为图片，当鼠标置于其上时，才会显示相关文字、超链接式按钮等。
+                其实现方式是在CSS中设置class选择器，当鼠标悬停在具有“.box”类的“.box-container”元素的内部时，对“.image”元素应用一些样式，即当鼠标悬停在“.box-container”
+                元素内部的“.box”元素上时，“.image”元素将会应用”top: 0“样式，该样式规则将使“.image”元素的垂直位置调整为距离父元素顶部为0的位置，也就是将其位置移动到上方，以此
+                便实现了“人物介绍”页面中默认展示文字的的效果；而在“美文欣赏”页面的CSS样式中，则是将“.content”元素设置为“top: 0”的样式，因此会默认展示图片。
+            </p>
+            <h5>5.2 遇到的问题及解决方法</h5>
+            <p>
+                由于该阶段主要遵循着以上界面的设计原则，因此在设计该界面时并没有遇到太多的困难和问题。
+            </p>
+            <h4>6.“青春会客厅”页面的设计</h4>
+            <h5>6.1 设计过程</h5>
+            <p>
+                该界面整体仍然使用“section”标签（该标签设置class为order），仍采用flex布局，设置了该界面的字体样式，设置了图片的相关样式。该界面主要实现了一个表单的提交，
+                该表单的输入标签input包括text、number、password等类型的文本。在用户填写好信息（或者不填也行，功能没有设置完整）后，可选择“立刻加入”按钮，此时窗口会弹出
+                一个提示框，提示“欢迎你！你已成为大家族中的一员！”，并回退到“内容”概览页面，这是由于在HTML和JS中设计了相关的鼠标点击事件。
+            </p>
+            <h5>6.2 遇到的问题及解决方法</h5>
+            <p>
+                在本阶段中，本想着有password类型的输入框，是否可以设置一个“密码密文和明文的切换”功能，并在该输入框内设置一”眼睛“图标。理想是丰满的，但现实是骨感的。
+                实施过程中，虽可实现密文和明文的切换，但无法解决当输入内容为空且此时以明文形式呈现时，输入框此时本该以密文的形式接收数据的问题。其次，最初的眼睛图标
+                显示于输入框外，样式很丑陋，便想着如何将眼睛图标内嵌至input中，可是经过很多次尝试，最后都以失败告终。
+            </p>
+            <h4>7.“其余细节的设计</h4>
+            <h5>7.1 悬浮框的设计</h5>
+            <p>
+                “悬浮框”，即当页面未处于首页时出现在页面右侧的悬浮按钮，当点击它时，页面将跳转至首页，且该按钮将立即消失。该按钮的实现原理与首页“时光穿梭……”按钮实现的原理一致，
+                不过此处的按钮有了而更多的细节，除了在其CSS页面中设置其固定样式外，还需要保证当前进入首页时，该按钮会立即消失，其实现原理是当元素同时具有“#scroll-top ID”和“.active类”时，
+                将应用“top: calc(100% - 12rem)”这一样式。该规则使用了CSS calc()函数，计算出该元素相对于其父元素顶部的位置。
+                在这个特定的规则中，元素的位置将被计算为其父元素高度的百分之100减去12rem。这意味着元素将被定位在距离其父元素底部12rem的位置。
+                如此便可实现一个滚动到顶部的按钮，在滚动到第二个页面时显示，并定位在页面底部的固定位置。
+            </p>
+            <h5>7.2 菜单栏的设计</h5>
+            <p>
+                菜单栏的设计主要说明一下其CSS样式的设计，该菜单栏为响应式菜单栏，在CSS中建立了一个媒体查询，当屏幕宽度小于等于768像素时应用一些样式。
+                媒体查询允许在不同的屏幕尺寸上应用不同的样式。
+                具体来说，当屏幕宽度小于等于768像素时，以下样式规则将生效：
+                ①#menu-bar 元素将显示（display: initial;）。
+                ②header .navbar 元素将设置为绝对定位，并位于父元素顶部100%的位置，全宽度（left: 0; right: 0;）。其背景将设置为#f7f7f7，顶部将有一个0.1像素粗的黑色边框，并且clip-path属性将定义为一个四边形，覆盖了元素本身的整个区域。
+                ③header .navbar.active 元素将具有不同的 clip-path 规则，更改形状以显示不同的样式。
+                ④header .navbar a 元素将有一些内边距和边框样式。
+                这些样式规则用于创建响应式的菜单栏，使其在小屏幕上以不同的方式呈现，例如显示下拉菜单或调整大小和样式。
+            </p>
+            <h5>7.3 加载页面的设计</h5>
+            <p>
+                该页面的实现原理是在JS中定义一个JavaScript函数 loader()，它通过添加一个CSS类来执行一个动画效果，从而隐藏一个加载器。
+                具体来说，这个函数使用document.querySelector('.loader-container')来获取页面中具有.loader-container类的元素。
+                然后，它使用classList.add('fade-out')将fade-out类添加到该元素的classList中。
+                通过添加fade-out类，该元素将应用一个CSS动画效果，使其逐渐消失或淡出。这个动画效果通过在CSS中定义fade-out类的相关样式规则来实现。
+                这个函数在页面内容加载完成后调用，以隐藏加载器并展示页面内容。
+            </p>
+            <h3>三、个人总结</h3>
+            <p>
+                1.首先，此次通过自己学到的Web基础知识，完成了一项自己感兴趣的内容的构思、设计、完善，整个过程是及其让人振奋及激动的，这也是自己在开发过程中遇到诸多问题能让自己坚持下去的一个重要原因。
+            </p>
+            <p>
+                2.其次，通过本次Web课程的学习，改变了以往我对HTML、CSS、JavaScript的刻板印象，原来会以为三者结合并不会创造出多么美观、令人惊叹的页面，但是通过本课程的学习，才发现自己是“井底之蛙”，并不是不能利用其写出观赏性强的页面，而是自己的探索不够、思考不够。
+            </p>
+            <p>
+                3.最后，通过课程的学习与作业的设计，我得出了一项至关重要的人生哲理：一件好的艺术品需要艺术家精雕细琢！
+            </p>
+        </div>
+    </div>
+
+</section>
+<!-- review section ends -->
+
+<!-- footer section  -->
+<section class="footer">
+    <div class="share">
+        <a href="#" class="btn">HTML & CSS 学习总结</a>
+        <a href="#" class="btn">JS & TS 学习总结</a>
+    </div>
+    <h1 class="credit"> created by <span> Lee Cong </span> | @CopyRight 2023 </h1>
+</section>
+
+<!-- scroll top button  -->
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- loader  -->
+<div class="loader-container">
+    <img src="/images/loader.gif" alt="">
+</div>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>
