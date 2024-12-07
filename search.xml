@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>计算机视觉：算法与应用——读中总结</title>
+    <url>/2024/12/07/CV/</url>
+    <content><![CDATA[<h2 id="计算机视觉：算法与应用（第二版）读中总结"><a href="#计算机视觉：算法与应用（第二版）读中总结" class="headerlink" title="计算机视觉：算法与应用（第二版）读中总结"></a>计算机视觉：算法与应用（第二版）读中总结</h2><p>&#x3D;&#x3D;硬性：每天10页，争取年前完成阅读，之后开始阅读论文&#x3D;&#x3D;</p>
+<h3 id="1、前言"><a href="#1、前言" class="headerlink" title="1、前言"></a>1、前言</h3><hr>
+<p>主要介绍了作者写作的背景和目的（合作教学基于计算机图形学的计算机视觉，帮助在校老师教学和研究计算机视觉领域自主学习）、第二版与第一版的不同之处（增加了一些新兴技术和应用）、致谢</p>
+<h3 id="2、引入"><a href="#2、引入" class="headerlink" title="2、引入"></a>2、引入</h3><hr>
+<h4 id="2-1-什么是计算机视觉"><a href="#2-1-什么是计算机视觉" class="headerlink" title="2.1 什么是计算机视觉"></a>2.1 什么是计算机视觉</h4><p>主要列举了计算机视觉在各个方面的应用（包括工业领域与非工业领域），简单地介绍了计算机视觉的研究方法、学习方法，部分介绍了本书涉及的内容。</p>
+<h4 id="2-2-计算机视觉发展简史"><a href="#2-2-计算机视觉发展简史" class="headerlink" title="2.2 计算机视觉发展简史"></a>2.2 计算机视觉发展简史</h4><p>介绍了从1970年到2020年计算机视觉发展的历程，介绍了各种方法由谁在什么时间提出。</p>
+<ul>
+<li><p>1970s：线条标记、边缘检测、非多面体的3D建模（广义圆柱体）、图形结构（弹性排列）、计算机视觉中的定性方法（本征图像、基于特征的立体对应算法、基于强度的光流算法、同时恢复 3D 结构和相机运动）、视觉信息处理系统的三个层次（计算理论、表示和算法、硬件实现）。</p>
+</li>
+<li><p>1980s：定量图像、场景分析、图像金字塔（用途：图像混合、粗到精对应搜索）、连续金字塔（用途：尺度空间处理概念）、小波、shape-from-X技术（X：shading、texture、focus；光度立体）、边缘和轮廓检测（动态演变的等值线追踪器：snakes）、基于物理的三维模型、MRF的在线变体（使用卡尔曼滤波建模和更新不确定性）、三维范围数据处理（采集、合并、建模、识别）&#x3D;&#x3D;&#x3D;&#x3D;&gt;&#x3D;&#x3D;立体、流、X形状、边缘检测算法可以用数学框架统一描述，如果他们能以变分优化问题呈现或使用正则化使其更稳健&#x2F;使用离散马尔科夫随机场（MRF）模型呈现。</p>
+</li>
+<li><p>1990s：射影不变量（用途：识别）、投影重建、因式分解（用途：正交相机近似）—-&gt;透视案例、捆绑调整（用途：全自动3D建模系统）、基于物理的视觉、改进的光流方法、密集立体对应算法、使用图形切割技术的全局优化、多视图立体算法（生成3D表面）、二进制剪影生成3D体积描述、基于跟踪和重建平滑遮挡等值线技术、跟踪算法（粒子过滤器、水平集基于强度的直接算法）、图像分割（基于最小能量和最小描述长度、归一化切割、均值偏移）、统计学习技术（主成分特征面分析、用于曲线跟踪的线性动力学系统）、CV与CG的交互（图像变形技术、视图插值、全景图像拼接、全光场渲染）、基于图像的建模技术（从图像集合中自动创建3D模型）。</p>
+</li>
+<li><p>2000s：基于图像的渲染&lt;&#x3D;&#x3D;&gt;计算摄影（图像拼接、光场捕获和渲染、通过曝光补偿的高动态范围成像、色调映射算法、合并flash和non-flash图片的技术、交互或自动从重叠图像选择不同区域的技术、纹理合成、绗缝、图像修复）；基于特征结合学习的技术（物体识别、星座模型、图形结构、场景识别、全景和位置识别兴趣点特征、基于轮廓的识别、区域分割）；基于复杂全局优化问题发展的更高效的算法（图形切割、消息传递算法如环路信念传播）；机器学习（标记数据的可用性与算力支持）。</p>
+</li>
+<li><p>2010s（深度学习和机器学习方法实现）：第一个深度神经网络——AlexNet、视频理解任务——动作识别、结构化回归任务——实时多人身体姿态估计、用于计算机视觉的专用传感器和硬件、SLAM、VIO。</p>
+</li>
+</ul>
+<h4 id="2-3-本书概述"><a href="#2-3-本书概述" class="headerlink" title="2.3 本书概述"></a>2.3 本书概述</h4><p>主要讲述了每个章节的主要内容，与目录类似。&#x3D;&#x3D;（第八章以后的目前未看，后面阅读八章后正文再补充看）&#x3D;&#x3D;</p>
+<h4 id="2-4教学大纲"><a href="#2-4教学大纲" class="headerlink" title="2.4教学大纲"></a>2.4教学大纲</h4><p>为国内外老师教学提供经验指导。</p>
+<h4 id="2-5-符号说明"><a href="#2-5-符号说明" class="headerlink" title="2.5 符号说明"></a>2.5 符号说明</h4><ul>
+<li>向量（默认为列向量）：$${\bf{v}}&#x3D;(x,y)$$</li>
+<li>矩阵：$${\bf{M}},{\bf{R}}(旋转矩阵),{\bf{K}}(校准矩阵),{\bf{I}}(单位矩阵)$$</li>
+<li>标量：$$T,s$$</li>
+<li>齐次坐标：$${\bf{\tilde x}} &#x3D; \left( {\tilde x,\tilde y,\tilde w} \right) &#x3D; \tilde w\left( {x,y,1} \right) &#x3D; \tilde w{\bf{\bar x}}(\bf{\bar x}是增广矩阵)$$。当$\tilde w&#x3D;0$时，齐次点${\bf{\tilde x}} $表示无穷远处的点，无与之等价的非齐次点。</li>
+</ul>
+<h4 id="2-6-补充阅读"><a href="#2-6-补充阅读" class="headerlink" title="2.6 补充阅读"></a>2.6 补充阅读</h4><p>主要介绍了各个领域可阅读的参考文献，如线性代数、图像处理、图像生成和渲染、计算机图形学、机器学习、深度学习、计算机视觉。同时，最新的研究文献设计的ideas和techniques也不可忽视（可通过找原论文、教程、幻灯片、笔记学习）。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/12/06/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
