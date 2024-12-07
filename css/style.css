@@ -1,10 +1,12 @@
 #footer {
-    background: transparent;
+    background: #ffd89b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#footer-wrap {
-    color: #0d0d0d;
-}
+/*#footer-wrap {*/
+/*    color: #0d0d0d;*/
+/*}*/
 
 /* 鼠标样式 */
 body {
@@ -15,4 +17,10 @@ a,
 img {
     cursor: url(https://cdn.jsdelivr.net/gh/constown/HexoCustomFile/public/cursors/pointer.cur),
     default;
+}
+
+.post-top-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
